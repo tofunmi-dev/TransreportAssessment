@@ -1,6 +1,6 @@
 const { test, expect } = require("@playwright/test")
 
-test("Add and Remove from cart Test", async ({ page }) => {
+test("This test is to validate that users can Add and Remove items to/from cart", async ({ page }) => {
 
     await page.goto('https://www.saucedemo.com/');
     await page.locator('[data-test="username"]').fill('standard_user');

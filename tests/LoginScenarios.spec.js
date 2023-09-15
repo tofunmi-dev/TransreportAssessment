@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test"
 
-test("Valid Login", async ({ page }) => {
+test("This test is to validate that users with valid login details can log into the website", async ({ page }) => {
 
     await page.goto('https://www.saucedemo.com/');
     await page.locator('[data-test="username"]').fill('standard_user');
@@ -12,7 +12,7 @@ test("Valid Login", async ({ page }) => {
 
 });
 
-test("Invalid Login Test", async ({ page }) => {
+test("This test is to validate that users with invalid login details cannot log into the website", async ({ page }) => {
 
     await page.goto('https://www.saucedemo.com/');
     await page.locator('[data-test="username"]').fill('locked_out_user');
