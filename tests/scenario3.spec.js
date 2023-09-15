@@ -16,7 +16,6 @@ test("Add/remove from cart Test", async ({ page }) => {
     await page.locator('[data-test="add-to-cart-test\\.allthethings\\(\\)-t-shirt-\\(red\\)"]').click();
     //check that 3 items have been added to cart
     await expect(page.locator('a').filter({ hasText: '3' })).toHaveText("3");
-
     await page.locator('[data-test="remove-sauce-labs-bolt-t-shirt"]').click();
     //check that the deleted item has been removed
     await page.pause();
