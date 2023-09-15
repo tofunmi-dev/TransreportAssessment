@@ -22,5 +22,6 @@ test("This test is to validate that users with invalid login details cannot log 
     await expect(page.locator('[data-test="error"]')).toBeVisible()
     //check that the page url does not change
     await expect(page).toHaveURL("https://www.saucedemo.com/")
-    await expect
+
+
 });
